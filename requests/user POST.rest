@@ -1,0 +1,18 @@
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "johndoe2",
+  "name": "John Doe",
+  "password": "password123"
+}
+
+### Malformed request: short username
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "a",
+  "name": "John Doe",
+  "password": "password123"
+}

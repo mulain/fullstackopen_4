@@ -1,0 +1,23 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UyIiwiaWQiOiI2ODE0ODE5NDRiZjM0MjJlZTI3NGJlMDQiLCJpYXQiOjE3NDYxNzQzODB9.-ShVdQGEdIYiUIcidtVhD1kKeWCHAYEq-NCgrQPBMrE
+
+{
+  "title": "Shmsimshmang Reloaded 2wwfdgsdfgsdfgsert",
+  "content": "Knizzleknang.",
+  "author": "Knoodle",
+  "url": "42.de",
+  "likes": "0"
+}
+
+### Malformed request: no title
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "content": "This is the content of my first blog.",
+  "author": "John Doe",
+  "url": "http://example.com/my-first-blog",
+  "likes": "0",
+  "user": "68137f4209d00ce692224174"
+}

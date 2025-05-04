@@ -1,0 +1,36 @@
+{
+    "name": "blogservice",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_ENV=production node index.js",
+        "dev": "NODE_ENV=development node --watch --watch-path=. index.js",
+        "test": "NODE_ENV=test node --test --test-concurrency=1",
+        "lint": "eslint ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "fullstackopen part 4",
+    "devDependencies": {
+        "@eslint/css": "^0.7.0",
+        "@eslint/js": "^9.25.1",
+        "@eslint/json": "^0.12.0",
+        "@eslint/markdown": "^6.4.0",
+        "eslint": "^9.25.1",
+        "eslint-config-prettier": "^10.1.2",
+        "eslint-plugin-prettier": "^5.2.6",
+        "globals": "^16.0.0",
+        "prettier": "^3.5.3",
+        "supertest": "^7.1.0",
+        "typescript-eslint": "^8.31.0"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "lodash": "^4.17.21",
+        "mongoose": "^8.13.2"
+    }
+}
