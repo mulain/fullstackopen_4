@@ -2,9 +2,9 @@ POST http://localhost:3003/api/users
 Content-Type: application/json
 
 {
-  "username": "johndoe2",
+  "username": "test",
   "name": "John Doe",
-  "password": "password123"
+  "password": "test"
 }
 
 ### Malformed request: short username

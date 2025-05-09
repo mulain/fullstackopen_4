@@ -70,7 +70,7 @@ const initialUsers = [
     username: 'testuser',
     name: 'Test User',
     passwordHash: '$2b$10$7Q1v5x4Z5z5Z5z5Z5z5Z5O',
-  },
+    },
 ]
 
 const blogsInDb = async () => {
